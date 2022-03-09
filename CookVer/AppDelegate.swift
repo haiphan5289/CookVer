@@ -11,10 +11,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.moveToTabbar()
         return true
+    }
+    
+    private func moveToTabbar() {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let tabbar = BaseTabbarViewController()
+        self.window?.rootViewController = tabbar
+        self.window?.makeKeyAndVisible()
     }
 
     // MARK: UISceneSession Lifecycle

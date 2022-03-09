@@ -11,9 +11,13 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
 
-  internal enum HelpSupport {
-    /// Help & Support
-    internal static let title = L10n.tr("Localizable", "HelpSupport.Title")
+  internal enum Tabbar {
+    /// Home
+    internal static let home = L10n.tr("Localizable", "Tabbar.Home")
+    /// My favourite
+    internal static let myfavourite = L10n.tr("Localizable", "Tabbar.Myfavourite")
+    /// Settings
+    internal static let settings = L10n.tr("Localizable", "Tabbar.Settings")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

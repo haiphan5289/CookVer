@@ -5,4 +5,6 @@
   Created by haiphan on 02/11/2021.
   
 */
-"HelpSupport.Title" = "Help & Support";
+"Tabbar.Home" = "Home";
+"Tabbar.Myfavourite" = "My favourite";
+"Tabbar.Settings" = "Settings";

@@ -13,14 +13,11 @@ class BaseNavigationViewController: UIViewController {
     
     let buttonLeft = UIButton(frame: CGRect(origin: .zero, size: CGSize(width: 44, height: 44)))
     let buttonRight = UIButton(frame: CGRect(origin: .zero, size: CGSize(width: 44, height: 44)))
-    let btSetting = UIButton(frame: CGRect(origin: .zero, size: CGSize(width: 44, height: 44)))
-    
-    var titleLarge: String = ""
+
     private let disposebag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupRX()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,22 +27,24 @@ class BaseNavigationViewController: UIViewController {
     }
     
     private func setupNavigation() {
-//        self.buttonLeft.contentEdgeInsets = UIEdgeInsets(top: 0, left: -16, bottom: 0, right: 0)
-//        self.buttonLeft.setImage(Asset.icBackArrow.image, for: .normal)
-//        let leftBarButton = UIBarButtonItem(customView: buttonLeft)
-//        
-//        self.buttonRight.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -16)
-//        self.buttonRight.setImage(Asset.icSearchArrow.image, for: .normal)
-//        let rightBarButton = UIBarButtonItem(customView: self.buttonRight)
-//        
-//        navigationItem.leftBarButtonItem = leftBarButton
-//        navigationItem.rightBarButtonItem = rightBarButton
-    }
-    
-    private func setupRX() {
-        self.buttonLeft.rx.tap.bind { _ in
-            self.navigationController?.popViewController()
-        }.disposed(by: disposebag)
+        var filled = UIButton.Configuration.plain()
+        filled.buttonSize = .small
+        filled.image = Asset.icSearch.image
+        
+        filled.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: -16, bottom: 0, trailing: 0)
+        self.buttonLeft.configuration = filled
+        let leftBarButton = UIBarButtonItem(customView: buttonLeft)
+        
+
+        var filledRight = UIButton.Configuration.plain()
+        filledRight.buttonSize = .small
+        filledRight.image = Asset.icAdd.image
+        filledRight.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: -16)
+        self.buttonRight.configuration = filledRight
+        let rightBarButton = UIBarButtonItem(customView: self.buttonRight)
+        
+        navigationItem.leftBarButtonItem = leftBarButton
+        navigationItem.rightBarButtonItem = rightBarButton
     }
     
 }

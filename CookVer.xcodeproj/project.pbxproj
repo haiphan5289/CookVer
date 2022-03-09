@@ -130,6 +130,10 @@
 		93AD973527D8ED9B005A8CC9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD972F27D8ED9B005A8CC9 /* Configuration.swift */; };
 		93AD973627D8ED9B005A8CC9 /* BackUponCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD973027D8ED9B005A8CC9 /* BackUponCloud.swift */; };
 		93AD973727D8ED9B005A8CC9 /* FirebaseManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD973127D8ED9B005A8CC9 /* FirebaseManage.swift */; };
+		93AD973B27D8F3E0005A8CC9 /* BaseTabarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD973A27D8F3E0005A8CC9 /* BaseTabarViewController.swift */; };
+		93AD974027D8F598005A8CC9 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AD973D27D8F598005A8CC9 /* HomeVC.xib */; };
+		93AD974127D8F598005A8CC9 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD973E27D8F598005A8CC9 /* HomeVM.swift */; };
+		93AD974227D8F598005A8CC9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD973F27D8F598005A8CC9 /* HomeVC.swift */; };
 		93B50C8427D88F0E003E1C07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B50C8327D88F0E003E1C07 /* AppDelegate.swift */; };
 		93B50C8627D88F0E003E1C07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B50C8527D88F0E003E1C07 /* SceneDelegate.swift */; };
 		93B50C8827D88F0E003E1C07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B50C8727D88F0E003E1C07 /* ViewController.swift */; };
@@ -263,6 +267,10 @@
 		93AD972F27D8ED9B005A8CC9 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		93AD973027D8ED9B005A8CC9 /* BackUponCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackUponCloud.swift; sourceTree = "<group>"; };
 		93AD973127D8ED9B005A8CC9 /* FirebaseManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManage.swift; sourceTree = "<group>"; };
+		93AD973A27D8F3E0005A8CC9 /* BaseTabarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabarViewController.swift; sourceTree = "<group>"; };
+		93AD973D27D8F598005A8CC9 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		93AD973E27D8F598005A8CC9 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		93AD973F27D8F598005A8CC9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		93B50C8027D88F0E003E1C07 /* CookVer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookVer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B50C8327D88F0E003E1C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93B50C8527D88F0E003E1C07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -669,6 +677,33 @@
 			path = InApp;
 			sourceTree = "<group>";
 		};
+		93AD973827D8F3AA005A8CC9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				93AD973C27D8F584005A8CC9 /* Home */,
+				93AD973927D8F3B6005A8CC9 /* tabbar */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		93AD973927D8F3B6005A8CC9 /* tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				93AD973A27D8F3E0005A8CC9 /* BaseTabarViewController.swift */,
+			);
+			path = tabbar;
+			sourceTree = "<group>";
+		};
+		93AD973C27D8F584005A8CC9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				93AD973D27D8F598005A8CC9 /* HomeVC.xib */,
+				93AD973E27D8F598005A8CC9 /* HomeVM.swift */,
+				93AD973F27D8F598005A8CC9 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		93B50C7727D88F0E003E1C07 = {
 			isa = PBXGroup;
 			children = (
@@ -695,13 +730,14 @@
 				93AD962127D8EBBA005A8CC9 /* Localizable */,
 				93AD962B27D8ED10005A8CC9 /* Categories */,
 				93AD967527D8ED42005A8CC9 /* Helper */,
-				93AD967827D8ED53005A8CC9 /* BaseCommonView */,
 				93AD968327D8ED61005A8CC9 /* Library */,
 				93AD96CB27D8ED6A005A8CC9 /* Networking */,
 				93AD96DC27D8ED79005A8CC9 /* Views */,
 				93AD971427D8ED89005A8CC9 /* Common */,
+				93AD967827D8ED53005A8CC9 /* BaseCommonView */,
 				93AD972327D8ED92005A8CC9 /* Constant */,
 				93AD972A27D8ED9B005A8CC9 /* ManageApp */,
+				93AD973827D8F3AA005A8CC9 /* Modules */,
 				93B50C8327D88F0E003E1C07 /* AppDelegate.swift */,
 				93B50C8527D88F0E003E1C07 /* SceneDelegate.swift */,
 				93B50C8727D88F0E003E1C07 /* ViewController.swift */,
@@ -780,6 +816,7 @@
 				93AD970C27D8ED79005A8CC9 /* font.xib in Resources */,
 				93B50C8D27D88F13003E1C07 /* Assets.xcassets in Resources */,
 				93AD970427D8ED79005A8CC9 /* ImportOptionsVC.xib in Resources */,
+				93AD974027D8F598005A8CC9 /* HomeVC.xib in Resources */,
 				93AD971027D8ED7A005A8CC9 /* FontCell.xib in Resources */,
 				93AD971327D8ED7A005A8CC9 /* ListFont.xib in Resources */,
 				93AD970627D8ED79005A8CC9 /* RecordingView.xib in Resources */,
@@ -869,6 +906,7 @@
 				93AD972927D8ED93005A8CC9 /* SettingDefaultFont.swift in Sources */,
 				93AD96AF27D8ED61005A8CC9 /* CALayerExtension.swift in Sources */,
 				93AD96AC27D8ED61005A8CC9 /* UITapgesture+Extension.swift in Sources */,
+				93AD974227D8F598005A8CC9 /* HomeVC.swift in Sources */,
 				93AD972727D8ED93005A8CC9 /* Constant.swift in Sources */,
 				93AD966327D8ED10005A8CC9 /* UISliderExtensions.swift in Sources */,
 				93AD96DB27D8ED6A005A8CC9 /* RealmModel.swift in Sources */,
@@ -894,6 +932,7 @@
 				93AD967327D8ED10005A8CC9 /* UIDatePickerExtensions.swift in Sources */,
 				93AD967127D8ED10005A8CC9 /* UIAlertControllerExtensions.swift in Sources */,
 				93AD96AA27D8ED61005A8CC9 /* RowDetailGeneric.swift in Sources */,
+				93AD974127D8F598005A8CC9 /* HomeVM.swift in Sources */,
 				93AD966E27D8ED10005A8CC9 /* UIApplicationExtensions.swift in Sources */,
 				93AD966127D8ED10005A8CC9 /* UINavigationBarExtensions.swift in Sources */,
 				93AD970527D8ED79005A8CC9 /* ImportOptionsVC.swift in Sources */,
@@ -949,6 +988,7 @@
 				93AD970927D8ED79005A8CC9 /* QuickActionsView.swift in Sources */,
 				93AD973627D8ED9B005A8CC9 /* BackUponCloud.swift in Sources */,
 				93AD966927D8ED10005A8CC9 /* ActivityExt.swift in Sources */,
+				93AD973B27D8F3E0005A8CC9 /* BaseTabarViewController.swift in Sources */,
 				93AD96D527D8ED6A005A8CC9 /* APILink.swift in Sources */,
 				93AD96D627D8ED6A005A8CC9 /* OptionalMessageDTO.swift in Sources */,
 				93AD966027D8ED10005A8CC9 /* ColorExtensions.swift in Sources */,
