@@ -27,5 +27,12 @@ pod 'HGCircularSlider'
 pod 'SwiftGen'
 pod 'HKVideoRangeSlider'
 pod 'Firebase'
+pod 'SwiftyStoreKit'
+pod 'KeychainSwift'
+pod 'Firebase'
+pod 'Firebase/Firestore'
+pod 'FirebaseFirestoreSwift'
+pod 'FirebaseAuth'
+pod 'Firebase/RemoteConfig'
 
 end
