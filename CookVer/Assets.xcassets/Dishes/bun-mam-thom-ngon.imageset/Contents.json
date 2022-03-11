@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "cach-nau-bun-mam-thom-ngon-kho-cuong-khong-khac-gi-ngoai-hang.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

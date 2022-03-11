@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "cach-nau-chao-thit-bam-don-gian.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

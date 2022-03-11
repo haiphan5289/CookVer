@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "thum1200-1200x676-9.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

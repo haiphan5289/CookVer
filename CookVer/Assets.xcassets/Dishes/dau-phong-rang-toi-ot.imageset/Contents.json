@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "dau-phong-rang-toi-ot.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

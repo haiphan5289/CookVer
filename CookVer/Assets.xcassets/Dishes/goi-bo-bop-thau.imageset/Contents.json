@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "goi-bo-bop-thau.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

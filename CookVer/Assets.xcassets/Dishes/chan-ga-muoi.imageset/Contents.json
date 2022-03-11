@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "chan_ga_muoi_ngon_hon_khi_bao_quan_lanh.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

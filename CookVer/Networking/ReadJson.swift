@@ -10,8 +10,8 @@ import SwiftyJSON
 import RxSwift
 import RxCocoa
 
-class ReadJSONFallLove {
-    static var shared = ReadJSONFallLove()
+class ReadJson {
+    static var shared = ReadJson()
     private let disposeBag = DisposeBag()
     func readJSONObs<T: Codable>(offType: T.Type, name: String, type: String) -> Observable<T> {
         return Observable.create { (observe) -> Disposable in

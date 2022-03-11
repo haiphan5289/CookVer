@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "cach-lam-cua-hap-bia-khong-tanh-va-giu-duoc-do-ngo.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

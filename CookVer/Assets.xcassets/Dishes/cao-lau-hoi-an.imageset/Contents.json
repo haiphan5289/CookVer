@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "cao-lau-hoi-an.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

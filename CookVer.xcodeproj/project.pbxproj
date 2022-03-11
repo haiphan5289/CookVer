@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		267B5D4BD9CD9E9777E3BC46 /* Pods_CookVer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CE4D87261631E593EB2381 /* Pods_CookVer.framework */; };
+		93AAD3FA27DBA33000F52427 /* GravyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AAD3F727DBA33000F52427 /* GravyVC.xib */; };
+		93AAD3FB27DBA33000F52427 /* GravyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAD3F827DBA33000F52427 /* GravyVM.swift */; };
+		93AAD3FC27DBA33000F52427 /* GravyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAD3F927DBA33000F52427 /* GravyVC.swift */; };
 		93AD962327D8EBBA005A8CC9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93AD962227D8EBBA005A8CC9 /* Localizable.strings */; };
 		93AD962527D8EC32005A8CC9 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 93AD962427D8EC32005A8CC9 /* swiftgen.yml */; };
 		93AD962927D8EC66005A8CC9 /* Strings-Gen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD962727D8EC66005A8CC9 /* Strings-Gen.swift */; };
@@ -140,11 +143,19 @@
 		93B50C8B27D88F0E003E1C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B50C8927D88F0E003E1C07 /* Main.storyboard */; };
 		93B50C8D27D88F13003E1C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B50C8C27D88F13003E1C07 /* Assets.xcassets */; };
 		93B50C9027D88F13003E1C07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B50C8E27D88F13003E1C07 /* LaunchScreen.storyboard */; };
+		93C4CAEB27DA4196004CAF70 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4CAE927DA4196004CAF70 /* HomeCell.swift */; };
+		93C4CAEC27DA4196004CAF70 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C4CAEA27DA4196004CAF70 /* HomeCell.xib */; };
+		93C4CAEF27DA4965004CAF70 /* DishesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4CAEE27DA4965004CAF70 /* DishesModel.swift */; };
+		93C4CAF327DA4A6B004CAF70 /* Gravy.json in Resources */ = {isa = PBXBuildFile; fileRef = 93C4CAF127DA4A6B004CAF70 /* Gravy.json */; };
+		93C4CAF427DA4A6B004CAF70 /* Dishes.json in Resources */ = {isa = PBXBuildFile; fileRef = 93C4CAF227DA4A6B004CAF70 /* Dishes.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F2C69F4BA33576FD0DCA2EC /* Pods-CookVer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookVer.release.xcconfig"; path = "Target Support Files/Pods-CookVer/Pods-CookVer.release.xcconfig"; sourceTree = "<group>"; };
 		73CE4D87261631E593EB2381 /* Pods_CookVer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookVer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93AAD3F727DBA33000F52427 /* GravyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GravyVC.xib; sourceTree = "<group>"; };
+		93AAD3F827DBA33000F52427 /* GravyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravyVM.swift; sourceTree = "<group>"; };
+		93AAD3F927DBA33000F52427 /* GravyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravyVC.swift; sourceTree = "<group>"; };
 		93AD962227D8EBBA005A8CC9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		93AD962427D8EC32005A8CC9 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		93AD962727D8EC66005A8CC9 /* Strings-Gen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings-Gen.swift"; sourceTree = "<group>"; };
@@ -279,6 +290,11 @@
 		93B50C8C27D88F13003E1C07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93B50C8F27D88F13003E1C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93B50C9127D88F13003E1C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C4CAE927DA4196004CAF70 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		93C4CAEA27DA4196004CAF70 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		93C4CAEE27DA4965004CAF70 /* DishesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesModel.swift; sourceTree = "<group>"; };
+		93C4CAF127DA4A6B004CAF70 /* Gravy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Gravy.json; sourceTree = "<group>"; };
+		93C4CAF227DA4A6B004CAF70 /* Dishes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dishes.json; sourceTree = "<group>"; };
 		A7245DBBCD9CD725D1010E60 /* Pods-CookVer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookVer.debug.xcconfig"; path = "Target Support Files/Pods-CookVer/Pods-CookVer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -309,6 +325,16 @@
 				4F2C69F4BA33576FD0DCA2EC /* Pods-CookVer.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		93AAD3F627DBA0FA00F52427 /* Gravy */ = {
+			isa = PBXGroup;
+			children = (
+				93AAD3F727DBA33000F52427 /* GravyVC.xib */,
+				93AAD3F827DBA33000F52427 /* GravyVM.swift */,
+				93AAD3F927DBA33000F52427 /* GravyVC.swift */,
+			);
+			path = Gravy;
 			sourceTree = "<group>";
 		};
 		93AD962127D8EBBA005A8CC9 /* Localizable */ = {
@@ -680,6 +706,7 @@
 		93AD973827D8F3AA005A8CC9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				93AAD3F627DBA0FA00F52427 /* Gravy */,
 				93AD973C27D8F584005A8CC9 /* Home */,
 				93AD973927D8F3B6005A8CC9 /* tabbar */,
 			);
@@ -697,6 +724,8 @@
 		93AD973C27D8F584005A8CC9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				93C4CAED27DA4922004CAF70 /* Model */,
+				93C4CAE827DA416C004CAF70 /* Cell */,
 				93AD973D27D8F598005A8CC9 /* HomeVC.xib */,
 				93AD973E27D8F598005A8CC9 /* HomeVM.swift */,
 				93AD973F27D8F598005A8CC9 /* HomeVC.swift */,
@@ -726,6 +755,7 @@
 			isa = PBXGroup;
 			children = (
 				93AD962427D8EC32005A8CC9 /* swiftgen.yml */,
+				93C4CAF027DA4994004CAF70 /* JSon */,
 				93AD962627D8EC43005A8CC9 /* SwiftGen */,
 				93AD962127D8EBBA005A8CC9 /* Localizable */,
 				93AD962B27D8ED10005A8CC9 /* Categories */,
@@ -747,6 +777,32 @@
 				93B50C9127D88F13003E1C07 /* Info.plist */,
 			);
 			path = CookVer;
+			sourceTree = "<group>";
+		};
+		93C4CAE827DA416C004CAF70 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				93C4CAE927DA4196004CAF70 /* HomeCell.swift */,
+				93C4CAEA27DA4196004CAF70 /* HomeCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		93C4CAED27DA4922004CAF70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93C4CAEE27DA4965004CAF70 /* DishesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93C4CAF027DA4994004CAF70 /* JSon */ = {
+			isa = PBXGroup;
+			children = (
+				93C4CAF227DA4A6B004CAF70 /* Dishes.json */,
+				93C4CAF127DA4A6B004CAF70 /* Gravy.json */,
+			);
+			path = JSon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -812,16 +868,20 @@
 				93AD962327D8EBBA005A8CC9 /* Localizable.strings in Resources */,
 				93AD962527D8EC32005A8CC9 /* swiftgen.yml in Resources */,
 				93B50C9027D88F13003E1C07 /* LaunchScreen.storyboard in Resources */,
+				93C4CAF427DA4A6B004CAF70 /* Dishes.json in Resources */,
 				93AD970F27D8ED7A005A8CC9 /* FontSize.xib in Resources */,
 				93AD970C27D8ED79005A8CC9 /* font.xib in Resources */,
 				93B50C8D27D88F13003E1C07 /* Assets.xcassets in Resources */,
+				93C4CAEC27DA4196004CAF70 /* HomeCell.xib in Resources */,
 				93AD970427D8ED79005A8CC9 /* ImportOptionsVC.xib in Resources */,
 				93AD974027D8F598005A8CC9 /* HomeVC.xib in Resources */,
 				93AD971027D8ED7A005A8CC9 /* FontCell.xib in Resources */,
+				93AAD3FA27DBA33000F52427 /* GravyVC.xib in Resources */,
 				93AD971327D8ED7A005A8CC9 /* ListFont.xib in Resources */,
 				93AD970627D8ED79005A8CC9 /* RecordingView.xib in Resources */,
 				93AD970A27D8ED79005A8CC9 /* QuickActionsView.xib in Resources */,
 				93B50C8B27D88F0E003E1C07 /* Main.storyboard in Resources */,
+				93C4CAF327DA4A6B004CAF70 /* Gravy.json in Resources */,
 				93AD96FF27D8ED79005A8CC9 /* ViewHeaderDialog.xib in Resources */,
 				93AD970127D8ED79005A8CC9 /* NavigationItemView.xib in Resources */,
 			);
@@ -940,6 +1000,8 @@
 				93AD968227D8ED53005A8CC9 /* BaseHeaderEditViewNavigation.swift in Sources */,
 				93AD962927D8EC66005A8CC9 /* Strings-Gen.swift in Sources */,
 				93AD96BC27D8ED61005A8CC9 /* UITextField_Extension.swift in Sources */,
+				93C4CAEF27DA4965004CAF70 /* DishesModel.swift in Sources */,
+				93C4CAEB27DA4196004CAF70 /* HomeCell.swift in Sources */,
 				93AD96AB27D8ED61005A8CC9 /* UIFont+Extension.swift in Sources */,
 				93B50C8427D88F0E003E1C07 /* AppDelegate.swift in Sources */,
 				93AD972227D8ED89005A8CC9 /* RangeTimeSlider.swift in Sources */,
@@ -958,6 +1020,7 @@
 				93AD96DA27D8ED6A005A8CC9 /* RealmManager.swift in Sources */,
 				93AD967027D8ED10005A8CC9 /* UIRefreshControlExtensions.swift in Sources */,
 				93AD970827D8ED79005A8CC9 /* ContextMenu.swift in Sources */,
+				93AAD3FC27DBA33000F52427 /* GravyVC.swift in Sources */,
 				93AD96A827D8ED61005A8CC9 /* UIApplication+Extension.swift in Sources */,
 				93AD966227D8ED10005A8CC9 /* UIActivityExtensions.swift in Sources */,
 				93AD968027D8ED53005A8CC9 /* BaseNavigationViewController.swift in Sources */,
@@ -982,6 +1045,7 @@
 				93AD96D727D8ED6A005A8CC9 /* ErrorTracker.swift in Sources */,
 				93AD96BA27D8ED61005A8CC9 /* ArrayExxtension.swift in Sources */,
 				93AD96C527D8ED61005A8CC9 /* CodableExtension.swift in Sources */,
+				93AAD3FB27DBA33000F52427 /* GravyVM.swift in Sources */,
 				93AD96A927D8ED61005A8CC9 /* Obserable+Extension.swift in Sources */,
 				93AD96B327D8ED61005A8CC9 /* Collection+Extension.swift in Sources */,
 				93AD96C227D8ED61005A8CC9 /* UIViewController+Rx.swift in Sources */,

@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "cach-lam-ngheu-hap-thai-don-gian-ngon-kho-cuong-5.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

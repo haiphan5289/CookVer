@@ -12,6 +12,8 @@ import Foundation
 internal enum L10n {
 
   internal enum Tabbar {
+    /// Gravy
+    internal static let gravy = L10n.tr("Localizable", "Tabbar.Gravy")
     /// Home
     internal static let home = L10n.tr("Localizable", "Tabbar.Home")
     /// My favourite

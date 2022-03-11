@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "banh-cay-vang-gion-600x400.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

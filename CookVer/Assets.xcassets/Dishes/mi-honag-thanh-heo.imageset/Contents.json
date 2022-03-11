@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "2-cach-nau-mi-hoanh-thanh-sieu-ngon-dam-da-cho-bua-sang-760x367.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

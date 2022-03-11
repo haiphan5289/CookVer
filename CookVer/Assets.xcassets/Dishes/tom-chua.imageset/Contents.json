@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "tom-chua-hue-an-kem-thit-luoc.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "huong-dan-nau-mon-oc-om-chuoi-dau-chuan-vi-bac-ivivu-9.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

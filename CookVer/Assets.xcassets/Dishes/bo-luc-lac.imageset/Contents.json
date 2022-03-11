@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "huong-dan-cach-lam-bo-luc-lac-mem-khong-bi-dai-cung-11.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

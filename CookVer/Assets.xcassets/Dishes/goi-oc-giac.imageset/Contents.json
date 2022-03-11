@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "goi-oc-giac-xoai-du-du-rau-ram.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

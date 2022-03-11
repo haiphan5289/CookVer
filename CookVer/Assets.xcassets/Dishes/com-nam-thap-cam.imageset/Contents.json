@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "com-nam-thap-cam-lam-nhu-the-nao-lam-mon-com-nam-4.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

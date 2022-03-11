@@ -14,7 +14,7 @@ import SnapKit
 class BaseTabbarViewController: UITabBarController {
     
     enum TypeTabbar: Int, CaseIterable {
-        case home, myfavourite, setting
+        case home, gravy, myfavourite, setting
         
         var viewcontrollers: UINavigationController {
             switch self {
@@ -30,6 +30,10 @@ class BaseTabbarViewController: UITabBarController {
                 let vc = HomeVC.createVC()
                 let navi = UINavigationController(rootViewController: vc)
                 return navi
+            case .gravy:
+                let vc = GravyVC.createVC()
+                let navi = UINavigationController(rootViewController: vc)
+                return navi
             }
         }
         
@@ -38,15 +42,17 @@ class BaseTabbarViewController: UITabBarController {
             case .home: return L10n.Tabbar.home
             case .myfavourite: return L10n.Tabbar.myfavourite
             case .setting: return L10n.Tabbar.settings
+            case .gravy: return L10n.Tabbar.gravy
             }
         }
-//        var img: UIImage {
-//            switch self {
-//            case .home: return Asset.icHome.image
-//            case .myfavourite: return Asset.icAllfiles.image
-//            case .setting: return Asset.icSetting.image
-//            }
-//        }
+        var img: UIImage {
+            switch self {
+            case .home: return Asset.icHome.image
+            case .myfavourite: return Asset.icFavorite.image
+            case .setting: return Asset.icSettings.image
+            case .gravy: return Asset.icGravy.image
+            }
+        }
         
     }
     
@@ -113,6 +119,7 @@ class BaseTabbarViewController: UITabBarController {
         TypeTabbar.allCases.forEach { (type) in
             if let vc = self.viewControllers?[type.rawValue] {
                 vc.tabBarItem.title = type.title
+                vc.tabBarItem.image = type.img
             }
         }
         

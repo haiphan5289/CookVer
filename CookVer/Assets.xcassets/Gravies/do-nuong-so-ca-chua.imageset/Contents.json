@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "cach-lam-nuoc-cham-do-nuong-ngon-1.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

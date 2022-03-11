@@ -27,14 +27,25 @@ class BaseNavigationViewController: UIViewController {
     }
     
     private func setupNavigation() {
+        if #available(iOS 15, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            if let navBar = self.navigationController {
+                let bar = navBar.navigationBar
+                bar.standardAppearance = appearance
+                bar.scrollEdgeAppearance = appearance
+            }
+
+        }
+        
         var filled = UIButton.Configuration.plain()
         filled.buttonSize = .small
         filled.image = Asset.icSearch.image
-        
+
         filled.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: -16, bottom: 0, trailing: 0)
         self.buttonLeft.configuration = filled
         let leftBarButton = UIBarButtonItem(customView: buttonLeft)
-        
+
 
         var filledRight = UIButton.Configuration.plain()
         filledRight.buttonSize = .small
@@ -42,9 +53,10 @@ class BaseNavigationViewController: UIViewController {
         filledRight.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: -16)
         self.buttonRight.configuration = filledRight
         let rightBarButton = UIBarButtonItem(customView: self.buttonRight)
-        
+
         navigationItem.leftBarButtonItem = leftBarButton
         navigationItem.rightBarButtonItem = rightBarButton
+        
     }
     
 }

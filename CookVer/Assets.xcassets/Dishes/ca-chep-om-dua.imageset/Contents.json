@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "cach-lam-mon-ca-chep-om-dua-dam-da-dua-com-ngay-mua-10.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

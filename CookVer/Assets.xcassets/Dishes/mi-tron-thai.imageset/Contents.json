@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "recipe-cover-r29785.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

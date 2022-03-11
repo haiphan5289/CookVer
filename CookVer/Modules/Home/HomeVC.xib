@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="CookVer" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="Y7c-hW-xtb" id="V08-PE-DbR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,8 +18,31 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dBS-Ss-5Rx">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Y7c-hW-xtb">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ywp-sX-Ykw">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                </stackView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dBS-Ss-5Rx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SVs-IZ-TxZ"/>
+                <constraint firstItem="dBS-Ss-5Rx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZEK-wS-v05"/>
+                <constraint firstItem="dBS-Ss-5Rx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lgw-oR-GJ7"/>
+                <constraint firstItem="dBS-Ss-5Rx" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="vpi-7E-6rQ"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="141"/>
         </view>
     </objects>

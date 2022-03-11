@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "la-mieng-voi-mon-ngheu-xao-sa-te-cay-nong-hap-dan-2_800x450.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

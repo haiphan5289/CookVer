@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "khoai-so-kho-thit-bo-thumbnail.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

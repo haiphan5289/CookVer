@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "mon-ngon-moi-ngay-kim-chi-600x450.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

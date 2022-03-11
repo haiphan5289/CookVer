@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "cach-lam-hau-nuong-pho-mai-2.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
