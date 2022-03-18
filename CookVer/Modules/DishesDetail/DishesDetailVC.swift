@@ -13,6 +13,10 @@ import RxSwift
 
 class DishesDetailVC: BaseNavigationViewController {
     
+    enum StatusDishes {
+        case like, unLike
+    }
+    
     var model: DishesModel?
     
     // Add here outlets
@@ -23,6 +27,7 @@ class DishesDetailVC: BaseNavigationViewController {
     
     // Add here your view model
     private var viewModel: DishesDetailVM = DishesDetailVM()
+    @VariableReplay private var statusDish: StatusDishes = .unLike
     
     private let disposeBag = DisposeBag()
     override func viewDidLoad() {
@@ -43,16 +48,35 @@ extension DishesDetailVC {
             self.lbResources.text = model.resources
             self.lbContents.text = model.cooking
         }
-        
-        if let model = self.model, (ManageApp.shared.dishes.firstIndex(where: { $0.code == model.code }) != nil) {
-            self.buttonRight.setImage(Asset.icHeart.image, for: .normal)
-        } else {
-            self.buttonRight.setImage(Asset.icUnheart.image, for: .normal)
-        }
-        
     }
     
     private func setupRX() {
         // Add here the setup for the RX
+        ManageApp.shared.$dishes.asObservable().bind { [weak self] list in
+            guard let wSelf = self, let model = wSelf.model else { return }
+            if (list.firstIndex(where: { $0.code == model.code }) != nil) {
+                wSelf.statusDish = .like
+            } else {
+                wSelf.statusDish = .unLike
+            }
+        }.disposed(by: self.disposeBag)
+        
+        self.$statusDish.asObservable().bind { [weak self] stt in
+            guard let wSelf = self else { return }
+            switch stt {
+            case .like: wSelf.buttonRight.setImage(Asset.icHeart.image, for: .normal)
+            case .unLike: wSelf.buttonRight.setImage(Asset.icUnheart.image, for: .normal)
+            }
+        }.disposed(by: self.disposeBag)
+        
+        self.buttonRight.rx.tap.bind { [weak self] _ in
+            guard let wSelf = self, let model = wSelf.model else { return }
+            switch wSelf.statusDish {
+            case .like: RealmManager.shared.deleteDishes(model: model)
+            case .unLike: RealmManager.shared.updateOrInsertConfig(model: model)
+            }
+        }.disposed(by: self.disposeBag)
+        
+        
     }
 }
