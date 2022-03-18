@@ -10,6 +10,7 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import DKImagePickerController
 
 class HomeVC: BaseNavigationViewController {
     
@@ -20,10 +21,12 @@ class HomeVC: BaseNavigationViewController {
     
     // Add here outlets
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     // Add here your view model
     private var viewModel: HomeVM = HomeVM()
     private var listDishes: [DishesModel] = []
+    private var listDishesFilter: [DishesModel] = []
     
     private let disposeBag = DisposeBag()
     override func viewDidLoad() {
@@ -48,31 +51,46 @@ extension HomeVC {
         self.viewModel.dishesEvent.asObservable().bind { [weak self] list in
             guard let wSelf = self else { return }
             wSelf.listDishes = list
+            wSelf.listDishesFilter = list
+            wSelf.collectionView.reloadData()
+        }.disposed(by: self.disposeBag)
+        
+        self.searchBar.rx.text.asObservable().bind { [weak self] text in
+            guard let wSelf = self else {
+                return
+            }
+            if let text = text, text != "" {
+                wSelf.listDishesFilter = wSelf.listDishes.filter { ($0.title ?? "").uppercased().contains(text.uppercased()) }
+            } else {
+                wSelf.listDishesFilter = wSelf.listDishes
+            }
             wSelf.collectionView.reloadData()
         }.disposed(by: self.disposeBag)
     }
 }
 extension HomeVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.listDishes.count
+        return self.listDishesFilter.count
     }
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCell.identifier, for: indexPath) as? HomeCell else {
             fatalError("")
         }
-        let item = self.listDishes[indexPath.row]
+        let item = self.listDishesFilter[indexPath.row]
         cell.lbTitle.text = item.title
         cell.img.image = item.getImage()
         return cell
     }
     
-    
 }
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let model = self.listDishesFilter[indexPath.row]
+        let vc = DishesDetailVC.createVC()
+        vc.model = model
+        self.navigationController?.pushViewController(vc, completion: nil)
+    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return Constant.sizeCell
     }

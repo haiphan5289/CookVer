@@ -143,6 +143,9 @@
 		93B50C8B27D88F0E003E1C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B50C8927D88F0E003E1C07 /* Main.storyboard */; };
 		93B50C8D27D88F13003E1C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B50C8C27D88F13003E1C07 /* Assets.xcassets */; };
 		93B50C9027D88F13003E1C07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B50C8E27D88F13003E1C07 /* LaunchScreen.storyboard */; };
+		93B6FEC227E4676D0050B365 /* DishesDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B6FEBF27E4676D0050B365 /* DishesDetailVC.xib */; };
+		93B6FEC327E4676D0050B365 /* DishesDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6FEC027E4676D0050B365 /* DishesDetailVM.swift */; };
+		93B6FEC427E4676D0050B365 /* DishesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6FEC127E4676D0050B365 /* DishesDetailVC.swift */; };
 		93C4CAEB27DA4196004CAF70 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4CAE927DA4196004CAF70 /* HomeCell.swift */; };
 		93C4CAEC27DA4196004CAF70 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C4CAEA27DA4196004CAF70 /* HomeCell.xib */; };
 		93C4CAEF27DA4965004CAF70 /* DishesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4CAEE27DA4965004CAF70 /* DishesModel.swift */; };
@@ -290,6 +293,9 @@
 		93B50C8C27D88F13003E1C07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93B50C8F27D88F13003E1C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93B50C9127D88F13003E1C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B6FEBF27E4676D0050B365 /* DishesDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishesDetailVC.xib; sourceTree = "<group>"; };
+		93B6FEC027E4676D0050B365 /* DishesDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesDetailVM.swift; sourceTree = "<group>"; };
+		93B6FEC127E4676D0050B365 /* DishesDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesDetailVC.swift; sourceTree = "<group>"; };
 		93C4CAE927DA4196004CAF70 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		93C4CAEA27DA4196004CAF70 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		93C4CAEE27DA4965004CAF70 /* DishesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesModel.swift; sourceTree = "<group>"; };
@@ -706,6 +712,7 @@
 		93AD973827D8F3AA005A8CC9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				93B6FEBD27E467480050B365 /* DishesDetail */,
 				93AAD3F627DBA0FA00F52427 /* Gravy */,
 				93AD973C27D8F584005A8CC9 /* Home */,
 				93AD973927D8F3B6005A8CC9 /* tabbar */,
@@ -777,6 +784,16 @@
 				93B50C9127D88F13003E1C07 /* Info.plist */,
 			);
 			path = CookVer;
+			sourceTree = "<group>";
+		};
+		93B6FEBD27E467480050B365 /* DishesDetail */ = {
+			isa = PBXGroup;
+			children = (
+				93B6FEBF27E4676D0050B365 /* DishesDetailVC.xib */,
+				93B6FEC027E4676D0050B365 /* DishesDetailVM.swift */,
+				93B6FEC127E4676D0050B365 /* DishesDetailVC.swift */,
+			);
+			path = DishesDetail;
 			sourceTree = "<group>";
 		};
 		93C4CAE827DA416C004CAF70 /* Cell */ = {
@@ -884,6 +901,7 @@
 				93C4CAF327DA4A6B004CAF70 /* Gravy.json in Resources */,
 				93AD96FF27D8ED79005A8CC9 /* ViewHeaderDialog.xib in Resources */,
 				93AD970127D8ED79005A8CC9 /* NavigationItemView.xib in Resources */,
+				93B6FEC227E4676D0050B365 /* DishesDetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1013,6 +1031,7 @@
 				93AD970227D8ED79005A8CC9 /* NavigationItemView.swift in Sources */,
 				93AD96C627D8ED61005A8CC9 /* Encode+Extension.swift in Sources */,
 				93AD965D27D8ED10005A8CC9 /* UIStoryboardExtensions.swift in Sources */,
+				93B6FEC327E4676D0050B365 /* DishesDetailVM.swift in Sources */,
 				93AD96AE27D8ED61005A8CC9 /* UILableExtension.swift in Sources */,
 				93AD971F27D8ED89005A8CC9 /* AppSettings.swift in Sources */,
 				93AD96C727D8ED61005A8CC9 /* PushNotificationHandler.swift in Sources */,
@@ -1048,6 +1067,7 @@
 				93AAD3FB27DBA33000F52427 /* GravyVM.swift in Sources */,
 				93AD96A927D8ED61005A8CC9 /* Obserable+Extension.swift in Sources */,
 				93AD96B327D8ED61005A8CC9 /* Collection+Extension.swift in Sources */,
+				93B6FEC427E4676D0050B365 /* DishesDetailVC.swift in Sources */,
 				93AD96C227D8ED61005A8CC9 /* UIViewController+Rx.swift in Sources */,
 				93AD970927D8ED79005A8CC9 /* QuickActionsView.swift in Sources */,
 				93AD973627D8ED9B005A8CC9 /* BackUponCloud.swift in Sources */,

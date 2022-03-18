@@ -11,7 +11,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class GravyVC: UIViewController {
+class GravyVC: BaseNavigationViewController {
     
     struct Constant {
         static let sizeCell: CGSize = CGSize(width: 100, height: 150)
@@ -20,10 +20,12 @@ class GravyVC: UIViewController {
     
     // Add here outlets
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     // Add here your view model
     private var viewModel: GravyVM = GravyVM()
     private var gravies: [DishesModel] = []
+    private var graviesFilter: [DishesModel] = []
     
     private let disposeBag = DisposeBag()
     override func viewDidLoad() {
@@ -48,23 +50,33 @@ extension GravyVC {
         self.viewModel.graviesEvent.asObservable().bind { [weak self] list in
             guard let wSelf = self else { return }
             wSelf.gravies = list
+            wSelf.graviesFilter = list
+            wSelf.collectionView.reloadData()
+        }.disposed(by: self.disposeBag)
+        
+        self.searchBar.rx.text.asObservable().bind { [weak self] text in
+            guard let wSelf = self else {
+                return
+            }
+            if let text = text, text != "" {
+                wSelf.graviesFilter = wSelf.gravies.filter { ($0.title ?? "").uppercased().contains(text.uppercased()) }
+            } else {
+                wSelf.graviesFilter = wSelf.gravies
+            }
             wSelf.collectionView.reloadData()
         }.disposed(by: self.disposeBag)
     }
 }
 extension GravyVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.gravies.count
+        return self.graviesFilter.count
     }
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCell.identifier, for: indexPath) as? HomeCell else {
             fatalError("")
         }
-        let item = self.gravies[indexPath.row]
+        let item = self.graviesFilter[indexPath.row]
         cell.lbTitle.text = item.title
         cell.img.image = item.getImage()
         return cell

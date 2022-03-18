@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="CookVer" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="Y7c-hW-xtb" id="V08-PE-DbR"/>
+                <outlet property="searchBar" destination="mbN-Nf-ep5" id="eTj-2S-zjR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,8 +23,12 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dBS-Ss-5Rx">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
+                        <searchBar contentMode="redraw" placeholder="search food...." translatesAutoresizingMaskIntoConstraints="NO" id="mbN-Nf-ep5">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Y7c-hW-xtb">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <rect key="frame" x="0.0" y="51" width="414" height="767"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ywp-sX-Ykw">
                                 <size key="itemSize" width="128" height="128"/>

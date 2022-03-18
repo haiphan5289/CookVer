@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GravyVC" customModule="CookVer" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="Dcn-Pm-0j8" id="8kW-VF-d9C"/>
+                <outlet property="searchBar" destination="2M7-zv-eEx" id="cIS-OU-LZh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,10 +21,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yer-Gl-keA">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
+                        <searchBar contentMode="redraw" placeholder="search gravies...." translatesAutoresizingMaskIntoConstraints="NO" id="2M7-zv-eEx">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Dcn-Pm-0j8">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            <rect key="frame" x="0.0" y="51" width="414" height="767"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hNn-Gu-MPR">
                                 <size key="itemSize" width="128" height="128"/>
@@ -38,7 +43,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="yer-Gl-keA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6gd-VW-A1w"/>
+                <constraint firstItem="yer-Gl-keA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6gd-VW-A1w"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yer-Gl-keA" secondAttribute="trailing" id="6tG-vY-vK9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yer-Gl-keA" secondAttribute="bottom" id="ita-6e-jRf"/>
                 <constraint firstItem="yer-Gl-keA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="y59-fU-4fe"/>
