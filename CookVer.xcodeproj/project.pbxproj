@@ -127,12 +127,9 @@
 		93AD972727D8ED93005A8CC9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD972427D8ED92005A8CC9 /* Constant.swift */; };
 		93AD972827D8ED93005A8CC9 /* GetHeightSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD972527D8ED92005A8CC9 /* GetHeightSafeArea.swift */; };
 		93AD972927D8ED93005A8CC9 /* SettingDefaultFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD972627D8ED92005A8CC9 /* SettingDefaultFont.swift */; };
-		93AD973227D8ED9B005A8CC9 /* SongExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD972B27D8ED9B005A8CC9 /* SongExporter.swift */; };
 		93AD973327D8ED9B005A8CC9 /* ManageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD972C27D8ED9B005A8CC9 /* ManageApp.swift */; };
 		93AD973427D8ED9B005A8CC9 /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD972E27D8ED9B005A8CC9 /* InAppPurchase.swift */; };
 		93AD973527D8ED9B005A8CC9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD972F27D8ED9B005A8CC9 /* Configuration.swift */; };
-		93AD973627D8ED9B005A8CC9 /* BackUponCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD973027D8ED9B005A8CC9 /* BackUponCloud.swift */; };
-		93AD973727D8ED9B005A8CC9 /* FirebaseManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD973127D8ED9B005A8CC9 /* FirebaseManage.swift */; };
 		93AD973B27D8F3E0005A8CC9 /* BaseTabarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD973A27D8F3E0005A8CC9 /* BaseTabarViewController.swift */; };
 		93AD974027D8F598005A8CC9 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AD973D27D8F598005A8CC9 /* HomeVC.xib */; };
 		93AD974127D8F598005A8CC9 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD973E27D8F598005A8CC9 /* HomeVM.swift */; };
@@ -146,6 +143,9 @@
 		93B6FEC227E4676D0050B365 /* DishesDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B6FEBF27E4676D0050B365 /* DishesDetailVC.xib */; };
 		93B6FEC327E4676D0050B365 /* DishesDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6FEC027E4676D0050B365 /* DishesDetailVM.swift */; };
 		93B6FEC427E4676D0050B365 /* DishesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6FEC127E4676D0050B365 /* DishesDetailVC.swift */; };
+		93B6FEC927E480B70050B365 /* FavouriteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B6FEC627E480B70050B365 /* FavouriteVC.xib */; };
+		93B6FECA27E480B70050B365 /* FavouriteVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6FEC727E480B70050B365 /* FavouriteVM.swift */; };
+		93B6FECB27E480B70050B365 /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6FEC827E480B70050B365 /* FavouriteVC.swift */; };
 		93C4CAEB27DA4196004CAF70 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4CAE927DA4196004CAF70 /* HomeCell.swift */; };
 		93C4CAEC27DA4196004CAF70 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C4CAEA27DA4196004CAF70 /* HomeCell.xib */; };
 		93C4CAEF27DA4965004CAF70 /* DishesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4CAEE27DA4965004CAF70 /* DishesModel.swift */; };
@@ -275,12 +275,9 @@
 		93AD972427D8ED92005A8CC9 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		93AD972527D8ED92005A8CC9 /* GetHeightSafeArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetHeightSafeArea.swift; sourceTree = "<group>"; };
 		93AD972627D8ED92005A8CC9 /* SettingDefaultFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingDefaultFont.swift; sourceTree = "<group>"; };
-		93AD972B27D8ED9B005A8CC9 /* SongExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongExporter.swift; sourceTree = "<group>"; };
 		93AD972C27D8ED9B005A8CC9 /* ManageApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageApp.swift; sourceTree = "<group>"; };
 		93AD972E27D8ED9B005A8CC9 /* InAppPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchase.swift; sourceTree = "<group>"; };
 		93AD972F27D8ED9B005A8CC9 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		93AD973027D8ED9B005A8CC9 /* BackUponCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackUponCloud.swift; sourceTree = "<group>"; };
-		93AD973127D8ED9B005A8CC9 /* FirebaseManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManage.swift; sourceTree = "<group>"; };
 		93AD973A27D8F3E0005A8CC9 /* BaseTabarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabarViewController.swift; sourceTree = "<group>"; };
 		93AD973D27D8F598005A8CC9 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		93AD973E27D8F598005A8CC9 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
@@ -296,6 +293,9 @@
 		93B6FEBF27E4676D0050B365 /* DishesDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishesDetailVC.xib; sourceTree = "<group>"; };
 		93B6FEC027E4676D0050B365 /* DishesDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesDetailVM.swift; sourceTree = "<group>"; };
 		93B6FEC127E4676D0050B365 /* DishesDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesDetailVC.swift; sourceTree = "<group>"; };
+		93B6FEC627E480B70050B365 /* FavouriteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteVC.xib; sourceTree = "<group>"; };
+		93B6FEC727E480B70050B365 /* FavouriteVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVM.swift; sourceTree = "<group>"; };
+		93B6FEC827E480B70050B365 /* FavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
 		93C4CAE927DA4196004CAF70 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		93C4CAEA27DA4196004CAF70 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		93C4CAEE27DA4965004CAF70 /* DishesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesModel.swift; sourceTree = "<group>"; };
@@ -691,11 +691,8 @@
 		93AD972A27D8ED9B005A8CC9 /* ManageApp */ = {
 			isa = PBXGroup;
 			children = (
-				93AD972B27D8ED9B005A8CC9 /* SongExporter.swift */,
 				93AD972C27D8ED9B005A8CC9 /* ManageApp.swift */,
 				93AD972D27D8ED9B005A8CC9 /* InApp */,
-				93AD973027D8ED9B005A8CC9 /* BackUponCloud.swift */,
-				93AD973127D8ED9B005A8CC9 /* FirebaseManage.swift */,
 			);
 			path = ManageApp;
 			sourceTree = "<group>";
@@ -713,6 +710,7 @@
 			isa = PBXGroup;
 			children = (
 				93B6FEBD27E467480050B365 /* DishesDetail */,
+				93B6FEC527E480A00050B365 /* Favourite */,
 				93AAD3F627DBA0FA00F52427 /* Gravy */,
 				93AD973C27D8F584005A8CC9 /* Home */,
 				93AD973927D8F3B6005A8CC9 /* tabbar */,
@@ -794,6 +792,16 @@
 				93B6FEC127E4676D0050B365 /* DishesDetailVC.swift */,
 			);
 			path = DishesDetail;
+			sourceTree = "<group>";
+		};
+		93B6FEC527E480A00050B365 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				93B6FEC627E480B70050B365 /* FavouriteVC.xib */,
+				93B6FEC727E480B70050B365 /* FavouriteVM.swift */,
+				93B6FEC827E480B70050B365 /* FavouriteVC.swift */,
+			);
+			path = Favourite;
 			sourceTree = "<group>";
 		};
 		93C4CAE827DA416C004CAF70 /* Cell */ = {
@@ -897,6 +905,7 @@
 				93AD971327D8ED7A005A8CC9 /* ListFont.xib in Resources */,
 				93AD970627D8ED79005A8CC9 /* RecordingView.xib in Resources */,
 				93AD970A27D8ED79005A8CC9 /* QuickActionsView.xib in Resources */,
+				93B6FEC927E480B70050B365 /* FavouriteVC.xib in Resources */,
 				93B50C8B27D88F0E003E1C07 /* Main.storyboard in Resources */,
 				93C4CAF327DA4A6B004CAF70 /* Gravy.json in Resources */,
 				93AD96FF27D8ED79005A8CC9 /* ViewHeaderDialog.xib in Resources */,
@@ -1001,7 +1010,6 @@
 				93B50C8827D88F0E003E1C07 /* ViewController.swift in Sources */,
 				93AD96C127D8ED61005A8CC9 /* Font+Extension.swift in Sources */,
 				93AD965E27D8ED10005A8CC9 /* UITabBarExtensions.swift in Sources */,
-				93AD973227D8ED9B005A8CC9 /* SongExporter.swift in Sources */,
 				93AD965127D8ED10005A8CC9 /* UISearchBarExtensions.swift in Sources */,
 				93AD970B27D8ED79005A8CC9 /* font.swift in Sources */,
 				93AD965527D8ED10005A8CC9 /* UILayoutPriorityExtensions.swift in Sources */,
@@ -1045,7 +1053,7 @@
 				93AD968027D8ED53005A8CC9 /* BaseNavigationViewController.swift in Sources */,
 				93AD966427D8ED10005A8CC9 /* UIViewControllerExtensions.swift in Sources */,
 				93AD967727D8ED42005A8CC9 /* KeyboardInfo.swift in Sources */,
-				93AD973727D8ED9B005A8CC9 /* FirebaseManage.swift in Sources */,
+				93B6FECB27E480B70050B365 /* FavouriteVC.swift in Sources */,
 				93AD96B627D8ED61005A8CC9 /* CustomButton.swift in Sources */,
 				93AD96D927D8ED6A005A8CC9 /* Request.swift in Sources */,
 				93AD965927D8ED10005A8CC9 /* UICollectionViewExtensions.swift in Sources */,
@@ -1054,6 +1062,7 @@
 				93AD965F27D8ED10005A8CC9 /* UISegmentedControlExtensions.swift in Sources */,
 				93AD96BD27D8ED61005A8CC9 /* String+Extension.swift in Sources */,
 				93AD96D827D8ED6A005A8CC9 /* ReadJson.swift in Sources */,
+				93B6FECA27E480B70050B365 /* FavouriteVM.swift in Sources */,
 				93AD971E27D8ED89005A8CC9 /* Storage.swift in Sources */,
 				93AD965A27D8ED10005A8CC9 /* UIImage+Extensions.swift in Sources */,
 				93AD970E27D8ED7A005A8CC9 /* FontSize.swift in Sources */,
@@ -1070,7 +1079,6 @@
 				93B6FEC427E4676D0050B365 /* DishesDetailVC.swift in Sources */,
 				93AD96C227D8ED61005A8CC9 /* UIViewController+Rx.swift in Sources */,
 				93AD970927D8ED79005A8CC9 /* QuickActionsView.swift in Sources */,
-				93AD973627D8ED9B005A8CC9 /* BackUponCloud.swift in Sources */,
 				93AD966927D8ED10005A8CC9 /* ActivityExt.swift in Sources */,
 				93AD973B27D8F3E0005A8CC9 /* BaseTabarViewController.swift in Sources */,
 				93AD96D527D8ED6A005A8CC9 /* APILink.swift in Sources */,

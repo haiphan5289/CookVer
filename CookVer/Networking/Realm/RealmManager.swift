@@ -41,8 +41,51 @@ class RealmManager {
         RLMRealm.default()
     }
     
+    private func getDishesRealm() -> [DishesRealm]  {
+        let arr = realm.objects(DishesRealm.self).toArray(ofType: DishesRealm.self)
+        return arr
+    }
+
+    func updateOrInsertConfig(model: DishesModel) {
+        let list = self.getDishesRealm()
+
+        if let index = list.firstIndex(where: { $0.id == model.code  }) {
+            try! realm.write {
+                list[index].data = try? model.toData()
+                NotificationCenter.default.post(name: NSNotification.Name(PushNotificationKeys.adđDishes.rawValue), object: model, userInfo: nil)
+            }
+        } else {
+            let itemAdd = DishesRealm.init(model: model)
+            try! realm.write {
+                realm.add(itemAdd)
+                NotificationCenter.default.post(name: NSNotification.Name(PushNotificationKeys.adđDishes.rawValue), object: model, userInfo: nil)
+            }
+        }
+    }
     
+    func deleteDishes(model: DishesModel) {
+        let list = self.getDishesRealm()
+        if let index = list.firstIndex(where: { $0.id == model.code  }) {
+            try! realm.write {
+                realm.delete(list[index])
+                NotificationCenter.default.post(name: NSNotification.Name(PushNotificationKeys.deleteDishes.rawValue), object: list[index], userInfo: nil)
+            }
+        }
+    }
     
+    func getDishes() -> [DishesModel] {
+        let listRealm = self.getDishesRealm()
+        var list: [DishesModel] = []
+        
+        listRealm.forEach { model in
+            guard let model = model.data?.toCodableObject() as DishesModel? else {
+                return
+            }
+            list.append(model)
+        }
+        
+        return list
+    }
     
 }
 

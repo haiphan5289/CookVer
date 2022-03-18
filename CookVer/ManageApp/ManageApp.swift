@@ -25,6 +25,9 @@ class ManageApp {
             return "$\(self.price.roundTo())"
         }
     }
+    
+    static let shared = ManageApp()
+    @VariableReplay var dishes: [DishesModel] = []
    
     private let disposeBag = DisposeBag()
     private init() {
@@ -32,6 +35,14 @@ class ManageApp {
     }
     
     func start() {
+        let addDishes = NotificationCenter.default.rx.notification(NSNotification.Name(PushNotificationKeys.adđDishes.rawValue), object: nil)
+        let deleteDishes = NotificationCenter.default.rx.notification(NSNotification.Name(PushNotificationKeys.deleteDishes.rawValue), object: nil)
+        Observable.merge(addDishes, deleteDishes)
+            .map { _ in RealmManager.shared.getDishes() }
+            .bind { [weak self] list in
+                guard let wSelf = self else { return }
+                wSelf.dishes = list
+            }.disposed(by: self.disposeBag)
     }
     
     

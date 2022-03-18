@@ -11,7 +11,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class DishesDetailVC: UIViewController {
+class DishesDetailVC: BaseNavigationViewController {
     
     var model: DishesModel?
     
@@ -36,13 +36,20 @@ extension DishesDetailVC {
     
     private func setupUI() {
         // Add here the setup for the UI
-        title = "Hướng dẫn nấu ăn"
+        title = "How to cook this dishes"
         if let model = self.model {
             self.img.image = model.getImage()
             self.lbTitle.text = model.title
             self.lbResources.text = model.resources
             self.lbContents.text = model.cooking
         }
+        
+        if let model = self.model, (ManageApp.shared.dishes.firstIndex(where: { $0.code == model.code }) != nil) {
+            self.buttonRight.setImage(Asset.icHeart.image, for: .normal)
+        } else {
+            self.buttonRight.setImage(Asset.icUnheart.image, for: .normal)
+        }
+        
     }
     
     private func setupRX() {

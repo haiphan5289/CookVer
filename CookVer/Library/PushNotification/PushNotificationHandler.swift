@@ -27,8 +27,8 @@ enum NotificationKey : String {
 }
 
 enum PushNotificationKeys : String {
-    case addedFolder = "addedFolder"
-    case deleteFolder = "deleteFolder"
+    case adđDishes = "adđDishes"
+    case deleteDishes = "deleteDishes"
 
 }
 

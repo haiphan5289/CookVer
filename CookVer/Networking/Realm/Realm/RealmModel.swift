@@ -8,23 +8,23 @@
 
 import Foundation
 import RealmSwift
-//
-//class FolderRealm: Object {
-//    @objc dynamic var data: Data?
-//    @objc dynamic var id: Double = 0
-//
-//    init(model: FolderModel) {
-//        super.init()
-//        do {
-//            self.data = try model.toData()
-//            self.id = model.id
-//        } catch {
-//            print("\(error.localizedDescription)")
-//        }
-//        
-//
-//    }
-//    required init() {
-//        super.init()
-//    }
-//}
+
+class DishesRealm: Object {
+    @objc dynamic var data: Data?
+    @objc dynamic var id: Int = 0
+
+    init(model: DishesModel) {
+        super.init()
+        do {
+            self.data = try model.toData()
+            self.id = model.code ?? 0
+        } catch {
+            print("\(error.localizedDescription)")
+        }
+        
+
+    }
+    required init() {
+        super.init()
+    }
+}

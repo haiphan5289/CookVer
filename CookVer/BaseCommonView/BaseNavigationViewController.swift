@@ -34,7 +34,6 @@ class BaseNavigationViewController: UIViewController {
                 bar.standardAppearance = appearance
                 bar.scrollEdgeAppearance = appearance
             }
-
         }
 
         var filledRight = UIButton.Configuration.plain()
@@ -44,7 +43,6 @@ class BaseNavigationViewController: UIViewController {
         self.buttonRight.configuration = filledRight
         let rightBarButton = UIBarButtonItem(customView: self.buttonRight)
         navigationItem.rightBarButtonItem = rightBarButton
-        
     }
     
 }

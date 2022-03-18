@@ -23,7 +23,7 @@ class BaseTabbarViewController: UITabBarController {
                 let navi = UINavigationController(rootViewController: vc)
                 return navi
             case .myfavourite:
-                let vc = HomeVC.createVC()
+                let vc = FavouriteVC.createVC()
                 let navi = UINavigationController(rootViewController: vc)
                 return navi
             case .setting:
