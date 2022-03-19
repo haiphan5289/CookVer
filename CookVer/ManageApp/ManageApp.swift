@@ -88,4 +88,10 @@ class ManageApp {
         return list
     }
     
+    func openLink(link: String) {
+        if let url = URL(string:link), UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
 }

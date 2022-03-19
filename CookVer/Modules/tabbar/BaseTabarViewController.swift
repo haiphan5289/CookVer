@@ -27,7 +27,7 @@ class BaseTabbarViewController: UITabBarController {
                 let navi = UINavigationController(rootViewController: vc)
                 return navi
             case .setting:
-                let vc = HomeVC.createVC()
+                let vc = SettingVC.createVC()
                 let navi = UINavigationController(rootViewController: vc)
                 return navi
             case .gravy:

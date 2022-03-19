@@ -1,26 +1,23 @@
 //
-//  HomeCell.swift
+//  SettingCell.swift
 //  CookVer
 //
-//  Created by haiphan on 10/03/2022.
+//  Created by haiphan on 19/03/2022.
 //
 
 import UIKit
 
-class HomeCell: UICollectionViewCell {
+class SettingCell: UICollectionViewCell {
     
     struct Constant {
         static let xShadow: CGFloat = 0
         static let yShadow: CGFloat = 4
         static let spreadShadow: CGFloat = -6
         static let blur: CGFloat = 54
-        static let numberOfCell: CGFloat = 3
-        static let spacingSection: CGFloat = 26
-        static let size: CGSize = CGSize(width: 100, height: 88)
     }
 
-    @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var lbTitle: UILabel!
+    @IBOutlet weak var img: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -34,7 +31,15 @@ class HomeCell: UICollectionViewCell {
                                                       y: Constant.yShadow,
                                                       blur: Constant.blur,
                                                       spread: Constant.spreadShadow)
-        self.layer.cornerRadius = 8
+        self.layer.cornerRadius = 20
     }
 
+}
+extension SettingCell {
+    
+    func setupValue(value: SettingVC.StatusCell) {
+        self.img.image = value.img
+        self.lbTitle.text = value.text
+    }
+    
 }
