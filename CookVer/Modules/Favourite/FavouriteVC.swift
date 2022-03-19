@@ -20,10 +20,12 @@ class FavouriteVC: BaseNavigationViewController {
     
     // Add here outlets
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     // Add here your view model
     private var viewModel: FavouriteVM = FavouriteVM()
     private var favourites: [DishesModel] = []
+    private var favouritesFilter: [DishesModel] = []
     
     private let disposeBag = DisposeBag()
     override func viewDidLoad() {
@@ -53,32 +55,33 @@ extension FavouriteVC {
         ManageApp.shared.$dishes.asObservable().bind { [weak self] list in
             guard let wSelf = self else { return }
             wSelf.favourites = list
+            wSelf.favouritesFilter = list
             wSelf.collectionView.reloadData()
         }.disposed(by: self.disposeBag)
         
-//        self.searchBar.rx.text.asObservable().bind { [weak self] text in
-//            guard let wSelf = self else {
-//                return
-//            }
-//            if let text = text, text != "" {
-//                wSelf.graviesFilter = wSelf.gravies.filter { ($0.title ?? "").uppercased().contains(text.uppercased()) }
-//            } else {
-//                wSelf.graviesFilter = wSelf.gravies
-//            }
-//            wSelf.collectionView.reloadData()
-//        }.disposed(by: self.disposeBag)
+        self.searchBar.rx.text.asObservable().bind { [weak self] text in
+            guard let wSelf = self else {
+                return
+            }
+            if let text = text, text != "" {
+                wSelf.favouritesFilter = wSelf.favourites.filter { ($0.title ?? "").uppercased().contains(text.uppercased()) }
+            } else {
+                wSelf.favouritesFilter = wSelf.favourites
+            }
+            wSelf.collectionView.reloadData()
+        }.disposed(by: self.disposeBag)
     }
 }
 extension FavouriteVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.favourites.count
+        return self.favouritesFilter.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCell.identifier, for: indexPath) as? HomeCell else {
             fatalError("")
         }
-        let item = self.favourites[indexPath.row]
+        let item = self.favouritesFilter[indexPath.row]
         cell.lbTitle.text = item.title
         cell.img.image = item.getImage()
         return cell
@@ -87,6 +90,12 @@ extension FavouriteVC: UICollectionViewDataSource {
     
 }
 extension FavouriteVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let model = self.favouritesFilter[indexPath.row]
+        let vc = DishesDetailVC.createVC()
+        vc.model = model
+        self.navigationController?.pushViewController(vc, completion: nil)
+    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return Constant.sizeCell
     }

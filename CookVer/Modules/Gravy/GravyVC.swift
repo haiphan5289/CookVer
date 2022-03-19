@@ -47,11 +47,20 @@ extension GravyVC {
     
     private func setupRX() {
         // Add here the setup for the RX
-        self.viewModel.graviesEvent.asObservable().bind { [weak self] list in
+        Observable.combineLatest(self.viewModel.graviesEvent, ManageApp.shared.$newGravies)
+            .asObservable().bind { [weak self] listJSon, listNew in
             guard let wSelf = self else { return }
-            wSelf.gravies = list
-            wSelf.graviesFilter = list
+            wSelf.gravies = listNew + listJSon
+            wSelf.graviesFilter = listNew + listJSon
             wSelf.collectionView.reloadData()
+        }.disposed(by: self.disposeBag)
+        
+        self.buttonRight.rx.tap.bind { [weak self] _ in
+            guard let wSelf = self else { return }
+            let vc = CreateDishVC.createVC()
+            vc.openfrom = .gravies
+            vc.hidesBottomBarWhenPushed = true
+            wSelf.navigationController?.pushViewController(vc, completion: nil)
         }.disposed(by: self.disposeBag)
         
         self.searchBar.rx.text.asObservable().bind { [weak self] text in
@@ -85,6 +94,14 @@ extension GravyVC: UICollectionViewDataSource {
     
 }
 extension GravyVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let model = self.graviesFilter[indexPath.row]
+        let vc = DishesDetailVC.createVC()
+        vc.model = model
+        self.navigationController?.pushViewController(vc, completion: nil)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return Constant.sizeCell
     }

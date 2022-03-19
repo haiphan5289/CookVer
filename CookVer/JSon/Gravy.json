@@ -1,6 +1,6 @@
 [
     {
-        "code": 1,
+        "code": 202,
         "title": "Muối Ớt Xanh Nha Trang",
         "image": "muoi-ot-xanh",
         "resources": "50gram ớt xiêm xanh\n25gram sữa đặc\n25gram đường\n15gram muối\n1 quả chanh\n10 lá chanh",
@@ -8,7 +8,7 @@
     },
     
     {
-        "code": 2,
+        "code": 203,
         "title": "Muối Ớt Đỏ",
         "image": "muoi-ot-do",
         "resources": "Ớt sừng: 30 gram.\nMuối: 15 gram.\nChanh tươi: 1 trái lớn.\nTỏi: 10 gram đã bóc vỏ.\nĐường trắng: 60 gram.\nLá chanh tươi: 10 gram.",
@@ -16,7 +16,7 @@
     },
     
     {
-        "code": 3,
+        "code": 204,
         "title": "Nước chấm Hải sản thái",
         "image": "nuoc-cham-hai-sai-thai",
         "resources": "Nước cốt me 2 Muỗng canh\nNước mắm 2 Muỗng canh\nĐường thốt nốt 1 Muỗng canh\nHành lá 1/4 Cây\n Ngò gai1/4 Cây\n Hành tím 1 Củ\n Ớt bột 1 Muỗng cà phê\nGạo15 Gr",
@@ -24,7 +24,7 @@
     },
     
     {
-        "code": 4,
+        "code": 205,
         "title": "Mù tạt vàng",
         "image": "mu-tat-vang",
         "resources": "Mù tạt vàng: 1/2 thìa.\nLòng đỏ trứng gà: 1 quả.\n1/2 thìa muối, 3 thìa đường.\n6 trái tắc.\n4 lá chanh.\n1 trái ớt sừng to.\nTiêu xay.",
@@ -32,7 +32,7 @@
     },
     
     {
-        "code": 17,
+        "code": 206,
         "title": "Bánh tráng Xốt sa tế tắc",
         "image": "banh-trang-sot-sa-te",
         "resources": "Tắc 100 gram\nMuối tôm 15 gram\nTương ớt 20 gram\nỚt băm 5 gram\nỚt bột 5 gram\nHành lá 20 gram\nHành tím 30 gram\nĐậu phộng 10 gram\nBơ 20 gram\nTrứng cút 10 cái\n(có thể gia giảm tùy thích)\nĐường 10 gram\nDầu ăn 10 gram",
@@ -40,7 +40,7 @@
     },
     
     {
-        "code": 5,
+        "code": 207,
         "title": "Muối Ơt Sả Tắc",
         "image": "muoi-ot-sa-tac",
         "resources": "Chanh: 4 trái (nếu có thì nên mua loại không hạt)\nTắc: 10 trái\nỚt: 15 trái\nĐường trắng: 300gr\nBột ngọt: 1 muỗng cà phê\nMuối hột: 20gr\nSả: 5 cây",
@@ -48,7 +48,7 @@
     },
     
     {
-        "code": 6,
+        "code": 208,
         "title": "Mắm đường chấm Xoài",
         "image": "nuoc-mam-cham-xoai",
         "resources": "Nước mắm ngon: 2 muỗng.\nĐường: 3 muỗng.\nỚt đỏ, tiêu xay theo khẩu vị của người thưởng thức.",
@@ -56,7 +56,7 @@
     },
     
     {
-        "code": 7,
+        "code": 209,
         "title": "Mắm ruốc chấm xoài",
         "image": "mam-ruoc-cham-xoai",
         "resources": "Đường thốt nốt: 2 muỗng\nRuốc khô/tôm khô/tép khô\nHành tím, hành tây\nNgò rí, ớt, tỏi",
@@ -64,7 +64,7 @@
     },
     
     {
-        "code": 8,
+        "code": 210,
         "title": "Nước mắm me chấm xoài",
         "image": "mam-me-cham-xoai",
         "resources": "Nước mắm ngon: 3 muỗng\nĐường nâu: 2 muỗng\nMe: 3 quả\nTép khô hoặc tôm khô\nHành khô, tỏi, ớt",
@@ -72,7 +72,7 @@
     },
     
     {
-        "code": 9,
+        "code": 211,
         "title": "Nước mắm sệt chấm xoài",
         "image": "mam-set-cham-xoai",
         "resources": "Nước mắm ngon: 2 muỗng\nĐường: 2 muỗng\nGiấm gạo: 1/2 muỗng\nBột bắp: 1/2 muỗng\nNước sôi để nguội\nỚt, tỏi băm",
@@ -80,7 +80,7 @@
     },
     
     {
-        "code": 10,
+        "code": 212,
         "title": "Nước chấm xoài 7 cấp độ",
         "image": "cham-xoai-7-cap-do",
         "resources": "2 thìa nước mắm ngon\n3 thìa đường\nỚt đỏ băm nhỏ\nTiêu xay tùy khẩu vị",
@@ -88,7 +88,7 @@
     },
     
     {
-        "code": 11,
+        "code": 213,
         "title": "Đồ nướng từ mật ong",
         "image": "do-nuong-so-ca-chua",
         "resources": "Tỏi và ớt bằm\n2 thìa canh bơ\n2 thìa canh giấm ăn\n1 thìa canh mù tạt\n4 thìa canh mật ong\n500ml nước sốt cà chua",
@@ -96,7 +96,7 @@
     },
     
     {
-        "code": 12,
+        "code": 214,
         "title": "Đồ nướng ngon từ me",
         "image": "do-nuong-tu-me",
         "resources": "300ml nước lọc\n200 gam đường trắng\n20 gam ớt xay nhuyễn\n30 gam tương cà\n300 gam me chín\n50ml nước mắm",
@@ -104,7 +104,7 @@
     },
     
     {
-        "code": 13,
+        "code": 215,
         "title": "Đồ nướng chuẩn vị Hàn Quốc",
         "image": "do-nuong-han-quoc",
         "resources": "3 thìa canh đường\n1 thìa canh dầu mè\n1 thìa canh mật ong\n1 thìa canh xì dầu (có thể dùng nước tương Hàn Quốc)\n2 thìa canh tương ớt Hàn Quốc\n2 thìa canh dầu hào\n1 củ tỏi\n2 quả ớt\n1/2 thìa cà phê vừng rang\nGia vị: Bột ngọt, hạt tiêu, dầu ăn, hạt nêm...",
@@ -112,7 +112,7 @@
     },
     
     {
-        "code": 14,
+        "code": 216,
         "title": "Đồ nướng kiểu Nhật",
         "image": "do-nuong-nhat",
         "resources": "120 gam đường nâu\n150ml nước tương Nhật Bản\n3 tép tỏi\n1 nhánh gừng tươi\n30ml dầu vừng\n30ml mật ong\n20 gam bột ngô\n80ml nước lọc\n1 thìa cà phê vừng rang\n60ml rượu Mirin Nhật Bản (có thể thay thế bằng rượu Sake)",
@@ -120,7 +120,7 @@
     },
     
     {
-        "code": 15,
+        "code": 217,
         "title": "Thịt nướng kiểu Thái",
         "image": "do-nuong-thai",
         "resources": "Nước mắm ngon: 2 muỗng\nNước cốt chanh tươi: 6 muỗng\nNước lọc: 3 muỗng\nĐường trắng: 1 muỗng\nMuối ăn: 1 thìa cà phê\nTỏi băm: 15 tép\nỚt: khoảng 20 trái cắt nhỏ",
@@ -128,7 +128,7 @@
     },
     
     {
-        "code": 16,
+        "code": 218,
         "title": "Bánh tráng sốt trứng",
         "image": "banh-trang-sot-trung",
         "resources": "10 trái tắc\n20g tương ớt\n5g ớt băm\n5g ớt bột\n20g hành lá\n30g hành tím\n2 muỗng canh dầu ăn\n10g đậu phộng rang\n20g bơ\nTrứng cút luộc (số lượng tùy thích)\nGia vị: đường trắng, muối tôm.",
@@ -136,7 +136,7 @@
     },
     
     {
-        "code": 18,
+        "code": 219,
         "title": "Gỏi cuốn nước mắm chua ngọt",
         "image": "goi-cuon-chua-ngot",
         "resources": "Nước mắm    5 muỗng (thìa) canh \nĐường    1 muỗng\nNước sôi để nguội    3 muỗng canh\nỚt tươi    2 quả\nChanh    ½ quả\nTỏi    5 tép",
@@ -144,7 +144,7 @@
     },
     
     {
-        "code": 19,
+        "code": 220,
         "title": "Gỏi cuốn nước mắm me",
         "image": "goi-cuon-mam-me",
         "resources": "Nước mắm ngon    2 muỗng canh\nMe chín    50 Gram\nĐường trắng    2 muỗng canh\nNước sôi    50 ml\nTỏi phi, hành phi    mỗi loại ½ muỗng cà phê\nỚt    2 trái",
@@ -152,7 +152,7 @@
     },
     
     {
-        "code": 19,
+        "code": 221,
         "title": "Gỏi cuốn nước mắm nêm",
         "image": "goi-cuon-mem-nem",
         "resources": "Mắm nêm ngon    1 chai 50ml\nĐường    1 muỗng canh\nThơm (dứa)    ½ trái\nChanh    2 trái\nỚt    3 trái\nTỏi    4 tép\nSả    1 cây",
@@ -160,7 +160,7 @@
     },
     
     {
-        "code": 20,
+        "code": 222,
         "title": "Vịt quay xì dầu",
         "image": "vit-quay-xi-dau",
         "resources": "Xì dầu (nước tương)\nChanh tươi\nỚt tươi\nTỏi khô\nĐường trắng\nMì chính\nGừng tươi.",
@@ -168,7 +168,7 @@
     },
     
     {
-        "code": 21,
+        "code": 223,
         "title": "Gà luộc chanh ớt",
         "image": "ga-luoc-chanh-ot",
         "resources": "Muối tinh: 1 thìa\n– Đường: ½ thìa\n– Mì chính: ½ thìa\n-Chanh: 1 quả\n– Ớt tươi: 1 quả\n– Lá chanh: 3 lá",
@@ -176,7 +176,7 @@
     },
     
     {
-        "code": 22,
+        "code": 224,
         "title": "bún thịt nướng nước mắm chua ngọt",
         "image": "bun-thit-nuong-chua-ngot",
         "resources": "7 muỗng canh nước mắm ngon\n200gr đu đủ xanh\n2 chén nước ấm\n5 muỗng đường\n1 củ cà rốt\n3 quả chanh tươi\n100ml giấm trắng\nTỏi, ớt băm",
@@ -184,7 +184,7 @@
     },
     
     {
-        "code": 23,
+        "code": 225,
         "title": "bún thịt tôm nướng nước mắm",
         "image": "bun-tom-nuong-mam-chua",
         "resources": "5 muỗng canh nước mắm loại ngon\n2 trái chanh tươi\n3 muỗng đường cát trắng\n100ml nước đun sôi để nguội\n100ml giấm chua\n200gr đu đủ xanh\n1 củ cà rốt cỡ vừa\nTỏi, ớt",
@@ -192,7 +192,7 @@
     },
     
     {
-        "code": 24,
+        "code": 226,
         "title": "nước chấm nem nướng Nha Trang",
         "image": "nem-nuong-nha-trang",
         "resources": "Thịt lợn nạc băm nhỏ: 150g\nTôm tươi băm nhỏ: 150g (nếu có tôm tươi thì nước chấm sẽ ngon hơn nhưng không có cũng không sao)\nGạp nếp: nửa bát con\nTương đậu nành: 3 muỗng\nDầu hạt điều: 1 muỗng\nCác gia vị đi kèm: muối hạt, đường trắng, mắm nguyên chất\nGan lợn: 100g\nĐậu phộng: 10g\nHành tím",

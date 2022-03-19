@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		267B5D4BD9CD9E9777E3BC46 /* Pods_CookVer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CE4D87261631E593EB2381 /* Pods_CookVer.framework */; };
+		9398F05327E6067C00999099 /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9398F05027E6067C00999099 /* SettingVC.xib */; };
+		9398F05427E6067C00999099 /* SettingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9398F05127E6067C00999099 /* SettingVM.swift */; };
+		9398F05527E6067C00999099 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9398F05227E6067C00999099 /* SettingVC.swift */; };
 		93AAD3FA27DBA33000F52427 /* GravyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AAD3F727DBA33000F52427 /* GravyVC.xib */; };
 		93AAD3FB27DBA33000F52427 /* GravyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAD3F827DBA33000F52427 /* GravyVM.swift */; };
 		93AAD3FC27DBA33000F52427 /* GravyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAD3F927DBA33000F52427 /* GravyVC.swift */; };
@@ -146,6 +149,9 @@
 		93B6FEC927E480B70050B365 /* FavouriteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B6FEC627E480B70050B365 /* FavouriteVC.xib */; };
 		93B6FECA27E480B70050B365 /* FavouriteVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6FEC727E480B70050B365 /* FavouriteVM.swift */; };
 		93B6FECB27E480B70050B365 /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6FEC827E480B70050B365 /* FavouriteVC.swift */; };
+		93B6FED227E4DE4A0050B365 /* CreateDishVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B6FECF27E4DE4A0050B365 /* CreateDishVC.xib */; };
+		93B6FED327E4DE4A0050B365 /* CreateDishVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6FED027E4DE4A0050B365 /* CreateDishVM.swift */; };
+		93B6FED427E4DE4A0050B365 /* CreateDishVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6FED127E4DE4A0050B365 /* CreateDishVC.swift */; };
 		93C4CAEB27DA4196004CAF70 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4CAE927DA4196004CAF70 /* HomeCell.swift */; };
 		93C4CAEC27DA4196004CAF70 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C4CAEA27DA4196004CAF70 /* HomeCell.xib */; };
 		93C4CAEF27DA4965004CAF70 /* DishesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4CAEE27DA4965004CAF70 /* DishesModel.swift */; };
@@ -156,6 +162,9 @@
 /* Begin PBXFileReference section */
 		4F2C69F4BA33576FD0DCA2EC /* Pods-CookVer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookVer.release.xcconfig"; path = "Target Support Files/Pods-CookVer/Pods-CookVer.release.xcconfig"; sourceTree = "<group>"; };
 		73CE4D87261631E593EB2381 /* Pods_CookVer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookVer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9398F05027E6067C00999099 /* SettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
+		9398F05127E6067C00999099 /* SettingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVM.swift; sourceTree = "<group>"; };
+		9398F05227E6067C00999099 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		93AAD3F727DBA33000F52427 /* GravyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GravyVC.xib; sourceTree = "<group>"; };
 		93AAD3F827DBA33000F52427 /* GravyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravyVM.swift; sourceTree = "<group>"; };
 		93AAD3F927DBA33000F52427 /* GravyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravyVC.swift; sourceTree = "<group>"; };
@@ -296,6 +305,9 @@
 		93B6FEC627E480B70050B365 /* FavouriteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteVC.xib; sourceTree = "<group>"; };
 		93B6FEC727E480B70050B365 /* FavouriteVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVM.swift; sourceTree = "<group>"; };
 		93B6FEC827E480B70050B365 /* FavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
+		93B6FECF27E4DE4A0050B365 /* CreateDishVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateDishVC.xib; sourceTree = "<group>"; };
+		93B6FED027E4DE4A0050B365 /* CreateDishVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDishVM.swift; sourceTree = "<group>"; };
+		93B6FED127E4DE4A0050B365 /* CreateDishVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDishVC.swift; sourceTree = "<group>"; };
 		93C4CAE927DA4196004CAF70 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		93C4CAEA27DA4196004CAF70 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		93C4CAEE27DA4965004CAF70 /* DishesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesModel.swift; sourceTree = "<group>"; };
@@ -331,6 +343,16 @@
 				4F2C69F4BA33576FD0DCA2EC /* Pods-CookVer.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9398F04F27E6066D00999099 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				9398F05027E6067C00999099 /* SettingVC.xib */,
+				9398F05127E6067C00999099 /* SettingVM.swift */,
+				9398F05227E6067C00999099 /* SettingVC.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		93AAD3F627DBA0FA00F52427 /* Gravy */ = {
@@ -709,6 +731,8 @@
 		93AD973827D8F3AA005A8CC9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9398F04F27E6066D00999099 /* Setting */,
+				93B6FECE27E4DE290050B365 /* CreateDish */,
 				93B6FEBD27E467480050B365 /* DishesDetail */,
 				93B6FEC527E480A00050B365 /* Favourite */,
 				93AAD3F627DBA0FA00F52427 /* Gravy */,
@@ -804,6 +828,16 @@
 			path = Favourite;
 			sourceTree = "<group>";
 		};
+		93B6FECE27E4DE290050B365 /* CreateDish */ = {
+			isa = PBXGroup;
+			children = (
+				93B6FECF27E4DE4A0050B365 /* CreateDishVC.xib */,
+				93B6FED027E4DE4A0050B365 /* CreateDishVM.swift */,
+				93B6FED127E4DE4A0050B365 /* CreateDishVC.swift */,
+			);
+			path = CreateDish;
+			sourceTree = "<group>";
+		};
 		93C4CAE827DA416C004CAF70 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -893,7 +927,9 @@
 				93AD962327D8EBBA005A8CC9 /* Localizable.strings in Resources */,
 				93AD962527D8EC32005A8CC9 /* swiftgen.yml in Resources */,
 				93B50C9027D88F13003E1C07 /* LaunchScreen.storyboard in Resources */,
+				9398F05327E6067C00999099 /* SettingVC.xib in Resources */,
 				93C4CAF427DA4A6B004CAF70 /* Dishes.json in Resources */,
+				93B6FED227E4DE4A0050B365 /* CreateDishVC.xib in Resources */,
 				93AD970F27D8ED7A005A8CC9 /* FontSize.xib in Resources */,
 				93AD970C27D8ED79005A8CC9 /* font.xib in Resources */,
 				93B50C8D27D88F13003E1C07 /* Assets.xcassets in Resources */,
@@ -964,6 +1000,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93AD966B27D8ED10005A8CC9 /* UILabelExtensions.swift in Sources */,
+				9398F05527E6067C00999099 /* SettingVC.swift in Sources */,
 				93AD965327D8ED10005A8CC9 /* UIEdgeInsetsExtensions.swift in Sources */,
 				93AD970D27D8ED7A005A8CC9 /* PathDraw.swift in Sources */,
 				93AD970727D8ED79005A8CC9 /* RecordingView.swift in Sources */,
@@ -987,6 +1024,7 @@
 				93AD965B27D8ED10005A8CC9 /* UITextViewExtensions.swift in Sources */,
 				93AD96CA27D8ED61005A8CC9 /* DateExtension.swift in Sources */,
 				93AD971127D8ED7A005A8CC9 /* FontCell.swift in Sources */,
+				93B6FED327E4DE4A0050B365 /* CreateDishVM.swift in Sources */,
 				93AD96C427D8ED61005A8CC9 /* StringExtension.swift in Sources */,
 				93AD966627D8ED10005A8CC9 /* UINavigationControllerExtensions.swift in Sources */,
 				93AD96B927D8ED61005A8CC9 /* DecimalNumber+Extension.swift in Sources */,
@@ -1009,6 +1047,7 @@
 				93AD971227D8ED7A005A8CC9 /* ListFont.swift in Sources */,
 				93B50C8827D88F0E003E1C07 /* ViewController.swift in Sources */,
 				93AD96C127D8ED61005A8CC9 /* Font+Extension.swift in Sources */,
+				9398F05427E6067C00999099 /* SettingVM.swift in Sources */,
 				93AD965E27D8ED10005A8CC9 /* UITabBarExtensions.swift in Sources */,
 				93AD965127D8ED10005A8CC9 /* UISearchBarExtensions.swift in Sources */,
 				93AD970B27D8ED79005A8CC9 /* font.swift in Sources */,
@@ -1056,6 +1095,7 @@
 				93B6FECB27E480B70050B365 /* FavouriteVC.swift in Sources */,
 				93AD96B627D8ED61005A8CC9 /* CustomButton.swift in Sources */,
 				93AD96D927D8ED6A005A8CC9 /* Request.swift in Sources */,
+				93B6FED427E4DE4A0050B365 /* CreateDishVC.swift in Sources */,
 				93AD965927D8ED10005A8CC9 /* UICollectionViewExtensions.swift in Sources */,
 				93B50C8627D88F0E003E1C07 /* SceneDelegate.swift in Sources */,
 				93AD966727D8ED10005A8CC9 /* UIViewExtensions.swift in Sources */,

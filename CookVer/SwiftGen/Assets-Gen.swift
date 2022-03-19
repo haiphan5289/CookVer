@@ -24,6 +24,7 @@ internal enum Asset {
   internal static let accentColor = ColorAsset(name: "AccentColor")
   internal static let backOpacity06 = ColorAsset(name: "backOpacity06")
   internal static let primary = ColorAsset(name: "primary")
+  internal static let icGalary = ImageAsset(name: "ic_galary")
   internal static let bachTuotNgamXaTac = ImageAsset(name: "bach-tuot-ngam-xa-tac")
   internal static let bachTuotNhungGiam = ImageAsset(name: "bach-tuot-nhung-giam")
   internal static let bachTuotSaTe = ImageAsset(name: "bach-tuot-sa-te")

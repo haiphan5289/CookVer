@@ -48,11 +48,19 @@ extension HomeVC {
     
     private func setupRX() {
         // Add here the setup for the RX
-        self.viewModel.dishesEvent.asObservable().bind { [weak self] list in
+        Observable.combineLatest(self.viewModel.dishesEvent, ManageApp.shared.$newDishes)
+            .asObservable().bind { [weak self] listJSon, listNew in
             guard let wSelf = self else { return }
-            wSelf.listDishes = list
-            wSelf.listDishesFilter = list
+            wSelf.listDishes = listNew + listJSon
+            wSelf.listDishesFilter = listNew + listJSon
             wSelf.collectionView.reloadData()
+        }.disposed(by: self.disposeBag)
+        
+        self.buttonRight.rx.tap.bind { [weak self] _ in
+            guard let wSelf = self else { return }
+            let vc = CreateDishVC.createVC()
+            vc.hidesBottomBarWhenPushed = true
+            wSelf.navigationController?.pushViewController(vc, completion: nil)
         }.disposed(by: self.disposeBag)
         
         self.searchBar.rx.text.asObservable().bind { [weak self] text in

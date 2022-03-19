@@ -28,3 +28,43 @@ class DishesRealm: Object {
         super.init()
     }
 }
+
+class AddDishesRealm: Object {
+    @objc dynamic var data: Data?
+    @objc dynamic var id: Int = 0
+
+    init(model: DishesModel) {
+        super.init()
+        do {
+            self.data = try model.toData()
+            self.id = model.code ?? 0
+        } catch {
+            print("\(error.localizedDescription)")
+        }
+        
+
+    }
+    required init() {
+        super.init()
+    }
+}
+
+class AddGraviesRealm: Object {
+    @objc dynamic var data: Data?
+    @objc dynamic var id: Int = 0
+
+    init(model: DishesModel) {
+        super.init()
+        do {
+            self.data = try model.toData()
+            self.id = model.code ?? 0
+        } catch {
+            print("\(error.localizedDescription)")
+        }
+        
+
+    }
+    required init() {
+        super.init()
+    }
+}

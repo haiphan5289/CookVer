@@ -28,6 +28,8 @@ class ManageApp {
     
     static let shared = ManageApp()
     @VariableReplay var dishes: [DishesModel] = []
+    @VariableReplay var newDishes: [DishesModel] = []
+    @VariableReplay var newGravies: [DishesModel] = []
    
     private let disposeBag = DisposeBag()
     private init() {
@@ -35,13 +37,37 @@ class ManageApp {
     }
     
     func start() {
+        let getDishes = Observable.just(RealmManager.shared.getDishes())
         let addDishes = NotificationCenter.default.rx.notification(NSNotification.Name(PushNotificationKeys.adđDishes.rawValue), object: nil)
-        let deleteDishes = NotificationCenter.default.rx.notification(NSNotification.Name(PushNotificationKeys.deleteDishes.rawValue), object: nil)
-        Observable.merge(addDishes, deleteDishes)
             .map { _ in RealmManager.shared.getDishes() }
+        let deleteDishes = NotificationCenter.default.rx.notification(NSNotification.Name(PushNotificationKeys.deleteDishes.rawValue), object: nil)
+            .map { _ in RealmManager.shared.getDishes() }
+        Observable.merge(addDishes, deleteDishes, getDishes)
             .bind { [weak self] list in
                 guard let wSelf = self else { return }
                 wSelf.dishes = list
+            }.disposed(by: self.disposeBag)
+        
+        let getNewDishes = Observable.just(RealmManager.shared.getAddDishes())
+        let addNewDishes = NotificationCenter.default.rx.notification(NSNotification.Name(PushNotificationKeys.adđNewDishes.rawValue), object: nil)
+            .map { _ in RealmManager.shared.getAddDishes() }
+        let deleteNewDishes = NotificationCenter.default.rx.notification(NSNotification.Name(PushNotificationKeys.deleteNewDishes.rawValue), object: nil)
+            .map { _ in RealmManager.shared.getAddDishes() }
+        Observable.merge(getNewDishes, addNewDishes, deleteNewDishes)
+            .bind { [weak self] list in
+                guard let wSelf = self else { return }
+                wSelf.newDishes = list
+            }.disposed(by: self.disposeBag)
+        
+        let getNewGravies = Observable.just(RealmManager.shared.getAddGravies())
+        let addNewGravies = NotificationCenter.default.rx.notification(NSNotification.Name(PushNotificationKeys.adđNewGravies.rawValue), object: nil)
+            .map { _ in RealmManager.shared.getAddGravies() }
+        let deleteNewGravies = NotificationCenter.default.rx.notification(NSNotification.Name(PushNotificationKeys.deleteNewGravies.rawValue), object: nil)
+            .map { _ in RealmManager.shared.getAddGravies() }
+        Observable.merge(getNewGravies, addNewGravies, deleteNewGravies)
+            .bind { [weak self] list in
+                guard let wSelf = self else { return }
+                wSelf.newGravies = list
             }.disposed(by: self.disposeBag)
     }
     

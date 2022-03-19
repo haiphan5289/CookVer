@@ -76,14 +76,80 @@ class RealmManager {
     func getDishes() -> [DishesModel] {
         let listRealm = self.getDishesRealm()
         var list: [DishesModel] = []
-        
         listRealm.forEach { model in
             guard let model = model.data?.toCodableObject() as DishesModel? else {
                 return
             }
             list.append(model)
         }
-        
+        return list
+    }
+    
+    private func getAddDishesRealm() -> [AddDishesRealm]  {
+        let arr = realm.objects(AddDishesRealm.self).toArray(ofType: AddDishesRealm.self)
+        return arr
+    }
+
+    func updateOrInsertAdd(model: DishesModel) {
+        let list = self.getAddDishesRealm()
+
+        if let index = list.firstIndex(where: { $0.id == model.code  }) {
+            try! realm.write {
+                list[index].data = try? model.toData()
+                NotificationCenter.default.post(name: NSNotification.Name(PushNotificationKeys.adđNewDishes.rawValue), object: model, userInfo: nil)
+            }
+        } else {
+            let itemAdd = AddDishesRealm.init(model: model)
+            try! realm.write {
+                realm.add(itemAdd)
+                NotificationCenter.default.post(name: NSNotification.Name(PushNotificationKeys.adđNewDishes.rawValue), object: model, userInfo: nil)
+            }
+        }
+    }
+    
+    func getAddDishes() -> [DishesModel] {
+        let listRealm = self.getAddDishesRealm()
+        var list: [DishesModel] = []
+        listRealm.forEach { model in
+            guard let model = model.data?.toCodableObject() as DishesModel? else {
+                return
+            }
+            list.append(model)
+        }
+        return list
+    }
+    
+    private func getAddGraviesRealm() -> [AddGraviesRealm]  {
+        let arr = realm.objects(AddGraviesRealm.self).toArray(ofType: AddGraviesRealm.self)
+        return arr
+    }
+
+    func updateOrInsertAddGravies(model: DishesModel) {
+        let list = self.getAddGraviesRealm()
+
+        if let index = list.firstIndex(where: { $0.id == model.code  }) {
+            try! realm.write {
+                list[index].data = try? model.toData()
+                NotificationCenter.default.post(name: NSNotification.Name(PushNotificationKeys.adđNewGravies.rawValue), object: model, userInfo: nil)
+            }
+        } else {
+            let itemAdd = AddGraviesRealm.init(model: model)
+            try! realm.write {
+                realm.add(itemAdd)
+                NotificationCenter.default.post(name: NSNotification.Name(PushNotificationKeys.adđNewGravies.rawValue), object: model, userInfo: nil)
+            }
+        }
+    }
+    
+    func getAddGravies() -> [DishesModel] {
+        let listRealm = self.getAddGraviesRealm()
+        var list: [DishesModel] = []
+        listRealm.forEach { model in
+            guard let model = model.data?.toCodableObject() as DishesModel? else {
+                return
+            }
+            list.append(model)
+        }
         return list
     }
     

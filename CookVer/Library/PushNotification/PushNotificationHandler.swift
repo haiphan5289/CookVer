@@ -29,7 +29,10 @@ enum NotificationKey : String {
 enum PushNotificationKeys : String {
     case adđDishes = "adđDishes"
     case deleteDishes = "deleteDishes"
-
+    case adđNewDishes = "adđNewDishes"
+    case deleteNewDishes = "deleteNewDishes"
+    case adđNewGravies = "adđNewGravies"
+    case deleteNewGravies = "deleteNewGravies"
 }
 
 class PushNotificationHandler {
